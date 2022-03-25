@@ -1,5 +1,6 @@
 import React from 'react';
 import LogoImage from '../../assets/images/fcb.svg';
+import Hamburger from '../Hamburger/Hamburger';
 import {
     HeaderWrapper,
     Inner,
@@ -16,6 +17,7 @@ const Header = () => {
                 <LogoContainer to="/">
                     <Logo src={LogoImage} alt="Logo" />
                 </LogoContainer>
+                <Hamburger />
                 <Nav>
                     <NavItem activeClassName="active" exact to="/">Home</NavItem>
                     <NavItem activeClassName="active" exact to="/team">Team</NavItem>

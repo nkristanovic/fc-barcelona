@@ -37,17 +37,9 @@ export const Inner = styled.div`
 
 export const LogoContainer = styled.div`
     display: block;
-    width: 100px;
-    height: 20px;
+    width: 133px;
+    height: 30px;
     
-    @media screen and (${breakpoints.mobileLarge}) {
-        width: 110px;
-        height: 22px;
-    }
-    @media screen and (${breakpoints.tablet}) {
-        width: 133px;
-        height: 30px;
-    }
     @media screen and (${breakpoints.desktop}) {
         width: 177px;
         height: 40px;
