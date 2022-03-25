@@ -39,6 +39,7 @@ export const LogoContainer = styled.div`
     display: block;
     width: 100px;
     height: 20px;
+    
     @media screen and (${breakpoints.mobileLarge}) {
         width: 110px;
         height: 22px;
@@ -80,13 +81,14 @@ export const NavItem = styled.div`
         margin: 15px 0;
         margin-right: 49px;
         &:hover {
-            color: ${colors.red};
+            color: ${colors.paprika};
+            cursor: pointer;
         }
         &:last-child {
             margin-right: 0;
         }
         &.active {
-            color: ${colors.red};
+            color: ${colors.paprika};
         }
     }
     @media screen and (${breakpoints.desktopLarge}) {
