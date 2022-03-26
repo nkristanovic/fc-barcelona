@@ -6,9 +6,10 @@ export const SectionContent = styled.div`
   @media screen and (${breakpoints.desktopLarge}) {
     ${(props) =>
     props.columns === 2 &&
-    `display: grid;
-        grid-template-columns: auto auto;
-        justify-content: space-between;`}
+    `margin: 80px 0 0 155px;
+      display: grid;
+      grid-template-columns: auto auto;
+      justify-content: space-between;`}
     max-width: 1440px;
   }
 `;

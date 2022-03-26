@@ -27,6 +27,7 @@ export const Overlay = styled.div`
 `;
 
 export const Content = styled.div`
+    font-family: 'Roboto', sans-serif;  
     text-align: center;
     width: 100%;
     padding: 0 15px; 
@@ -44,6 +45,7 @@ export const Content = styled.div`
 `;
 
 export const Heading = styled.h1`
+    font-family: 'Roboto', sans-serif;
     color:${colors.goldenYellow};
     line-height: 70px;
     font-weight: 700;
@@ -61,6 +63,7 @@ export const Heading = styled.h1`
 `;
 
 export const Subheading = styled.p`
+    font-family: 'Roboto', sans-serif;
     line-height: 24px;
     font-weight: 400;
     color: ${colors.white};

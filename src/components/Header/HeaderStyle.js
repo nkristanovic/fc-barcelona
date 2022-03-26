@@ -31,8 +31,10 @@ export const Inner = styled.div`
         margin: 0 auto;
     }
     @media screen and (${breakpoints.desktopLarge}) {
-        max-width: 1280px;
+        max-width: 1540px;
+        padding: 15px 40px;
     }
+
 `;
 
 export const LogoContainer = styled.div`
@@ -64,7 +66,8 @@ export const Nav = styled.nav`
 `;
 
 export const NavItem = styled.div`
-     @media screen and (${breakpoints.desktop}) {
+    font-family: 'Roboto', sans-serif;
+    @media screen and (${breakpoints.desktop}) {
         display: inline-block;
         color: ${colors.white};
         line-height: 50px;
@@ -73,14 +76,14 @@ export const NavItem = styled.div`
         margin: 15px 0;
         margin-right: 49px;
         &:hover {
-            color: ${colors.paprika};
+            color: ${colors.goldenYellow};
             cursor: pointer;
         }
         &:last-child {
             margin-right: 0;
         }
         &.active {
-            color: ${colors.paprika};
+            color: ${colors.goldenYellow};
         }
     }
     @media screen and (${breakpoints.desktopLarge}) {

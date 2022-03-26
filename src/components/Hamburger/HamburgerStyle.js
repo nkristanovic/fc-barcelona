@@ -31,27 +31,29 @@ export const NavHamburgerLine = styled.div`
 `;
 
 export const Ul = styled.ul`
-  list-style: none;
-  display: flex;
-  flex-flow: column nowrap;
-  margin-top: 80px;
-  transform: ${({ open }) => open ? 'translateX(0%)' : 'translateX(100%)'};
-  max-width: 1024px;
-  background-color: ${colors.goldenYellow};
-  position: fixed;
-  top: 0;
-  right: 0;
-  text-align: center;
-  height: 100%;
-  width: 100%;
-  font-weight: bold;
-  
-  @media screen and (${breakpoints.desktop}) {
-    display: none;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 80px;
+    transform: ${({ open }) => open ? 'translateX(0%)' : 'translateX(100%)'};
+    max-width: 1024px;
+    background-color: ${colors.goldenYellow};
+    position: fixed;
+    top: 0;
+    right: 0;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    font-weight: bold;
+    
+    @media screen and (${breakpoints.desktop}) {
+        display: none;
     }
 `;
 
 export const NavHamb = styled.div`
+    font-family: 'Roboto', sans-serif;
     padding: 30px 10px;
     text-decoration:none;
     color: ${colors.black};
