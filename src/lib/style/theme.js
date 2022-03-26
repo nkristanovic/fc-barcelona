@@ -12,5 +12,6 @@ export const colors = {
     mirage: '#181733',
     midnightBlue: '#003568',
     mediumDarkPink: '#A50044',
-    paprika: '#99003F'
+    paprika: '#99003F',
+    blackOverlay: 'rgba(0, 0, 0, 0.7)'
 }
