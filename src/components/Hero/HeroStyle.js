@@ -27,7 +27,7 @@ export const Overlay = styled.div`
 `;
 
 export const Content = styled.div`
-    align-items: center;
+    text-align: center;
     width: 100%;
     padding: 0 15px; 
     @media screen and (${breakpoints.mobileLarge}) {
