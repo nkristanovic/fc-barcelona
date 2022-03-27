@@ -61,3 +61,21 @@ export const PrimaryButtonStyle = styled.button`
   ${ButtonDefault};
 `;
 
+export const Grid = styled.div`
+    display: grid;
+    row-gap: 40px;
+    column-gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+    @media  screen and (${breakpoints.tablet}) {
+      row-gap: 45px;
+      column-gap: 55px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media  screen and (${breakpoints.desktop}) {
+      grid-template-columns: repeat(2, 1fr);
+      max-width: 993px;
+    }
+    @media  screen and (${breakpoints.desktopLarge}) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+`;  
