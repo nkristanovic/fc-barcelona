@@ -3,15 +3,22 @@ import { boxShadow, breakpoints, colors } from './theme';
 
 export const SectionContent = styled.div`
     margin: auto;
-  @media screen and (${breakpoints.desktopLarge}) {
     ${(props) =>
     props.columns === 2 &&
-    `margin: 80px 0 0 155px;
+    `margin-top: 100px;
+    @media screen and (${breakpoints.desktop}) {
       display: grid;
+      justify-content: end;
+      justify-items: end;
       grid-template-columns: auto auto;
-      justify-content: space-between;`}
-    max-width: 1440px;
-  }
+      padding: 15px;
+      padding: 15px 30px;
+    }
+    @media screen and (${breakpoints.desktopLarge}) {
+      max-width: 1540px;
+      padding: 15px 40px;
+    }
+  `} 
 `;
 export const ButtonDefault = css`
   background-color: ${colors.paprika};
@@ -53,3 +60,4 @@ export const PrimaryButton = ({ text, onClick }) => {
 export const PrimaryButtonStyle = styled.button`
   ${ButtonDefault};
 `;
+
