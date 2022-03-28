@@ -6,7 +6,6 @@ import {
     NavHamb
 } from './HamburgerStyle';
 
-
 const Hamburger = () => {
     const [open, setOpen] = useState(false);
 
