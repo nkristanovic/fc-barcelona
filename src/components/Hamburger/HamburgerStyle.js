@@ -38,7 +38,7 @@ export const Ul = styled.ul`
     margin-top: 80px;
     transform: ${({ open }) => open ? 'translateX(0%)' : 'translateX(100%)'};
     max-width: 1024px;
-    background-color: ${colors.goldenYellow};
+    background-color: ${colors.mirage};
     position: fixed;
     top: 0;
     right: 0;
@@ -46,7 +46,6 @@ export const Ul = styled.ul`
     height: 100%;
     width: 100%;
     font-weight: bold;
-    
     @media screen and (${breakpoints.desktop}) {
         display: none;
     }
@@ -56,7 +55,7 @@ export const NavHamb = styled.div`
     font-family: 'Roboto', sans-serif;
     padding: 30px 10px;
     text-decoration:none;
-    color: ${colors.black};
+    color:${colors.white};
     &:last-child {
         padding: 0;
     }

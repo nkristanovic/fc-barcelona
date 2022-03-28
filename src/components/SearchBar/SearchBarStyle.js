@@ -10,18 +10,22 @@ import { AiOutlineClose } from 'react-icons/ai';
 export const BarWrapper = styled.div`
   position: relative;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  @media  screen and (${breakpoints.tablet}) {
+      text-align: left;
+  }
 `;
 
 export const SearchIcon = styled.figure`
   position: absolute;
   top: 50%;
   transform: translateY(-40%);
-  left: 35px;
+  left: 10px;
   height: 20px;
   @media  screen and (${breakpoints.tablet}) {
-    left: 8.6rem;
-    height: 20px;
+    top: 14px;
+    left: 10px;
   }
   @media  screen and (${breakpoints.desktop}) {
       top: 18px;
@@ -34,20 +38,21 @@ export const ClearIcon = styled.figure`
   top: 50%;
   transform: translateY(-40%);
   height: 20px;
-  right:35px;
+  right:10px;
   cursor: pointer;
   @media  screen and (${breakpoints.tablet}) {
-    right:8.6rem;
+    top: 14px;
+    right: 16.4rem;
   }
   @media  screen and (${breakpoints.desktop}) {
       top: 18px;
-      right: 15px;
+      right: 5.4rem;
   }
 `;
 
 export const Input = styled.input`
     height: 30px;
-    width: 200px;
+    width: 250px;
     border-radius: 4px;
     font-family: 'Roboto';
     border: solid 2px ${colors.goldenYellow};
@@ -94,3 +99,4 @@ export const Close = styled(AiOutlineClose)`
       height: 20px;
     }
 `;
+
