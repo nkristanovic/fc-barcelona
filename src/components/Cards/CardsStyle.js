@@ -3,7 +3,6 @@ import { colors, breakpoints } from '../../lib/style/theme';
 
 export const Card = styled.div`
     display: block;
-    
     @media screen and (${breakpoints.mobileLarge}) {
         width: 250px;
     }
@@ -11,7 +10,8 @@ export const Card = styled.div`
     @media screen and (${breakpoints.desktop}) {
         width: 288px;
         height: 288px;
-        padding: 8px 0 0 8px;
+        padding: 8px 0 0 0;
+        margin-bottom: 34px;
     }
 `;
 export const Image = styled.img`
@@ -84,6 +84,7 @@ export const Title = styled.div`
     display: flex;
     padding: 230px 34px 0 34px;
     width: 100%;
+    text-align: center;
 `;
 
 export const Item = styled.div`

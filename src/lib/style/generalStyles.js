@@ -70,6 +70,7 @@ export const Grid = styled.div`
       row-gap: 45px;
       column-gap: 55px;
       grid-template-columns: repeat(2, 1fr);
+      align-items: center;
     }
     @media  screen and (${breakpoints.desktop}) {
       grid-template-columns: repeat(2, 1fr);

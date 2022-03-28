@@ -3,7 +3,7 @@ import {
     colors,
     breakpoints,
 } from '../../lib/style/theme';
-
+import { NavLink } from 'react-router-dom';
 export const HeaderWrapper = styled.header`
     width: 100%;
     height: 80px;
@@ -11,6 +11,7 @@ export const HeaderWrapper = styled.header`
     top: 0;
     left: 0;
     z-index: 1;
+    background: ${colors.mirage};
 `;
 
 export const Inner = styled.div`
@@ -37,7 +38,7 @@ export const Inner = styled.div`
 
 `;
 
-export const LogoContainer = styled.div`
+export const LogoContainer = styled(NavLink)`
     display: block;
     width: 133px;
     height: 30px;
@@ -65,8 +66,9 @@ export const Nav = styled.nav`
     }
 `;
 
-export const NavItem = styled.div`
+export const NavItem = styled(NavLink)`
     font-family: 'Roboto', sans-serif;
+    text-decoration: none;
     @media screen and (${breakpoints.desktop}) {
         display: inline-block;
         color: ${colors.white};

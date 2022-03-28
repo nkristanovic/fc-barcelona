@@ -6,6 +6,11 @@ import {
     NavHamb
 } from './HamburgerStyle';
 
+const links = {
+    Home: 'Home',
+    Team: 'Team'
+}
+
 const Hamburger = () => {
     const [open, setOpen] = useState(false);
 
@@ -17,8 +22,8 @@ const Hamburger = () => {
                 <NavHamburgerLine />
             </NavHamburger>
             <Ul open={open}>
-                <NavHamb to="/" onClick={() => setOpen(!open)} >Home</NavHamb>
-                <NavHamb to="/team" onClick={() => setOpen(!open)}>Team</NavHamb>
+                <NavHamb activeclassname="active" to="/" onClick={() => setOpen(!open)} >{links.Home}</NavHamb>
+                <NavHamb activeclassname="active" to="/team" onClick={() => setOpen(!open)}>{links.Team}</NavHamb>
             </Ul>
         </>
     )

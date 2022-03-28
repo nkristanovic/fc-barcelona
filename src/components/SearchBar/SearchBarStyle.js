@@ -21,7 +21,7 @@ export const SearchIcon = styled.figure`
   position: absolute;
   top: 50%;
   transform: translateY(-40%);
-  left: 10px;
+  left: 32px;
   height: 20px;
   @media  screen and (${breakpoints.tablet}) {
     top: 14px;

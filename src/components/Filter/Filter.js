@@ -25,7 +25,7 @@ import {
 import SearchBar from '../SearchBar/SearchBar';
 
 
-const Filter = () => {
+const Filter = (props) => {
     const [showDescription, setShowDescrption] = useState(false);
     const [showDescription1, setShowDescrption1] = useState(false);
     const [showDescription2, setShowDescrption2] = useState(false);
@@ -53,7 +53,7 @@ const Filter = () => {
                 </TitleWrapper>
                 <FilterOption>
                     <LabelFilter>Filters</LabelFilter>
-                    <SearchBar />
+                    <SearchBar handle={props.handleChange} />
                     {isMobile ? (
                         <FilterWrapper>
                             <FilterList onClick={() => setShowDescrption(!showDescription)} />

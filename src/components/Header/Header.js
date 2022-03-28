@@ -10,6 +10,11 @@ import {
     NavItem,
 } from './HeaderStyle';
 
+const links = {
+    Home: 'Home',
+    Team: 'Team'
+}
+
 const Header = () => {
     return (
         <HeaderWrapper>
@@ -19,8 +24,8 @@ const Header = () => {
                 </LogoContainer>
                 <Hamburger />
                 <Nav>
-                    <NavItem activeClassName="active" exact to="/">Home</NavItem>
-                    <NavItem activeClassName="active" exact to="/team">Team</NavItem>
+                    <NavItem activeclassname="active" to="/">{links.Home}</NavItem>
+                    <NavItem activeclassname="active" to="/team">{links.Team}</NavItem>
                 </Nav>
             </Inner>
         </HeaderWrapper>

@@ -3,6 +3,7 @@ import {
     breakpoints,
     colors
 } from '../../lib/style/theme';
+import { NavLink } from 'react-router-dom';
 
 export const NavHamburger = styled.div`
     width: 25px;
@@ -51,7 +52,7 @@ export const Ul = styled.ul`
     }
 `;
 
-export const NavHamb = styled.div`
+export const NavHamb = styled(NavLink)`
     font-family: 'Roboto', sans-serif;
     padding: 30px 10px;
     text-decoration:none;
@@ -62,4 +63,7 @@ export const NavHamb = styled.div`
     @media (${breakpoints.mobileLarge}) {
         font-size: 18px;
     }
+    &.active {
+            color: ${colors.goldenYellow};
+        }
 `;
