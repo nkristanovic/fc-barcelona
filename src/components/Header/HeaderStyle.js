@@ -4,6 +4,7 @@ import {
     breakpoints,
 } from '../../lib/style/theme';
 import { NavLink } from 'react-router-dom';
+
 export const HeaderWrapper = styled.header`
     width: 100%;
     height: 80px;

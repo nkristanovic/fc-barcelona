@@ -9,14 +9,14 @@ export const NavHamburger = styled.div`
     width: 25px;
     position: fixed;
     right:15px;
-    @media screen and (${breakpoints.desktop}) {
-        display: none;
+    @media screen and (${breakpoints.mobileLarge}) {
+       right: 20px;
     }
     @media screen and (${breakpoints.tablet}) {
        right: 15px;
     }
-    @media screen and (${breakpoints.mobileLarge}) {
-       right: 20px;
+    @media screen and (${breakpoints.desktop}) {
+        display: none;
     }
 `;
 

@@ -3,6 +3,7 @@ import { colors, breakpoints } from '../../lib/style/theme';
 
 export const Card = styled.div`
     display: block;
+    margin-top: 30px;
     @media screen and (${breakpoints.mobileLarge}) {
         width: 250px;
     }
@@ -14,13 +15,14 @@ export const Card = styled.div`
         margin-bottom: 34px;
     }
 `;
+
 export const Image = styled.img`
     width: 250px;
     height: 250px;
     object-fit: cover;
     @media screen and (${breakpoints.desktop}) {
-        width: 288px;
-        height: 288px;
+        width: 278px;
+        height: 278px;
     }
 `;
 export const Wrapper = styled.div`
@@ -133,7 +135,7 @@ export const HorizontalLine = styled.div`
     margin: 0 auto;
     margin-top: 9px;
     @media  screen and (${breakpoints.desktop}) {
-        width: 288px;
+        width: 278px;
         height: 1px;
         margin-top: 9px;
     }

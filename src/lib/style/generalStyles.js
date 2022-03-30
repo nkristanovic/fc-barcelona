@@ -66,6 +66,8 @@ export const Grid = styled.div`
     row-gap: 40px;
     column-gap: 20px;
     grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 40px;
+    justify-items: center;
     @media  screen and (${breakpoints.tablet}) {
       row-gap: 45px;
       column-gap: 55px;

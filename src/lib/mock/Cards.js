@@ -23,7 +23,8 @@ import Braithwaite from '../../assets/images/braithwaite.png';
 import Luuk from '../../assets/images/luuk.png';
 import Torres from '../../assets/images/torres.png';
 import Aubameyang from '../../assets/images/aubameyang.png';
-export const goalkeepers = [
+
+export const players = [
     {
         id: 1,
         imgUrl: Stegen,
@@ -45,12 +46,9 @@ export const goalkeepers = [
         age: 32,
         nationality: 'Brazilian',
         value: 4,
-    }
-];
-
-export const defenders = [
+    },
     {
-        id: 1,
+        id: 3,
         imgUrl: Dest,
         imgAlt: 'Sergiño Dest',
         number: 2,
@@ -61,7 +59,7 @@ export const defenders = [
         value: 18,
     },
     {
-        id: 2,
+        id: 4,
         imgUrl: Pique,
         imgAlt: 'Gerard Piqué',
         number: 3,
@@ -72,7 +70,7 @@ export const defenders = [
         value: 5,
     },
     {
-        id: 3,
+        id: 5,
         imgUrl: Araujo,
         imgAlt: 'Ronald Araújo',
         number: 4,
@@ -83,7 +81,7 @@ export const defenders = [
         value: 40,
     },
     {
-        id: 4,
+        id: 6,
         imgUrl: Alves,
         imgAlt: 'Dani Alves',
         number: 8,
@@ -94,7 +92,7 @@ export const defenders = [
         value: 1,
     },
     {
-        id: 5,
+        id: 7,
         imgUrl: Lenglet,
         imgAlt: 'Clément Lenglet',
         number: 15,
@@ -105,7 +103,7 @@ export const defenders = [
         value: 14,
     },
     {
-        id: 6,
+        id: 8,
         imgUrl: Alba,
         imgAlt: 'Jordi Alba',
         number: 18,
@@ -116,7 +114,7 @@ export const defenders = [
         value: 12,
     },
     {
-        id: 7,
+        id: 9,
         imgUrl: Mingueza,
         imgAlt: 'Óscar Mingueza',
         number: 22,
@@ -127,7 +125,7 @@ export const defenders = [
         value: 9,
     },
     {
-        id: 8,
+        id: 10,
         imgUrl: Umtiti,
         imgAlt: 'Samuel Umtiti',
         number: 23,
@@ -138,7 +136,7 @@ export const defenders = [
         value: 2,
     },
     {
-        id: 9,
+        id: 11,
         imgUrl: Garcia,
         imgAlt: 'Eric García',
         number: 24,
@@ -147,12 +145,9 @@ export const defenders = [
         age: 21,
         nationality: 'Spanish',
         value: 18,
-    }
-];
-
-export const midfielders = [
+    },
     {
-        id: 1,
+        id: 12,
         imgUrl: Busquets,
         imgAlt: 'Sergio Busquets',
         number: 5,
@@ -163,7 +158,7 @@ export const midfielders = [
         value: 9,
     },
     {
-        id: 2,
+        id: 13,
         imgUrl: Puig,
         imgAlt: 'Riqui Puig',
         number: 6,
@@ -174,7 +169,7 @@ export const midfielders = [
         value: 9,
     },
     {
-        id: 3,
+        id: 14,
         imgUrl: Gonzalez,
         imgAlt: 'Nico González',
         number: 14,
@@ -185,7 +180,7 @@ export const midfielders = [
         value: 25,
     },
     {
-        id: 4,
+        id: 15,
         imgUrl: Pedri,
         imgAlt: 'Pedri',
         number: 16,
@@ -196,7 +191,7 @@ export const midfielders = [
         value: 80,
     },
     {
-        id: 5,
+        id: 16,
         imgUrl: Roberto,
         imgAlt: 'Sergi Roberto',
         number: 20,
@@ -207,7 +202,7 @@ export const midfielders = [
         value: 7,
     },
     {
-        id: 6,
+        id: 17,
         imgUrl: deJong,
         imgAlt: 'Frenkie de Jong',
         number: 21,
@@ -216,12 +211,9 @@ export const midfielders = [
         age: 24,
         nationality: 'Dutch',
         value: 70,
-    }
-];
-
-export const forwards = [
+    },
     {
-        id: 1,
+        id: 18,
         imgUrl: Dembele,
         imgAlt: 'Ousmane Dembélé',
         number: 7,
@@ -232,7 +224,7 @@ export const forwards = [
         value: 30,
     },
     {
-        id: 2,
+        id: 19,
         imgUrl: Depay,
         imgAlt: 'Memphis Depay',
         number: 9,
@@ -243,7 +235,7 @@ export const forwards = [
         value: 45,
     },
     {
-        id: 3,
+        id: 20,
         imgUrl: Fati,
         imgAlt: 'Ansu Fati',
         number: 10,
@@ -254,7 +246,7 @@ export const forwards = [
         value: 60,
     },
     {
-        id: 4,
+        id: 21,
         imgUrl: Traore,
         imgAlt: 'Adama Traoré',
         number: 11,
@@ -265,7 +257,7 @@ export const forwards = [
         value: 28,
     },
     {
-        id: 5,
+        id: 22,
         imgUrl: Braithwaite,
         imgAlt: 'Martin Braithwaite',
         number: 12,
@@ -276,7 +268,7 @@ export const forwards = [
         value: 7.5,
     },
     {
-        id: 6,
+        id: 23,
         imgUrl: Luuk,
         imgAlt: 'Luuk de Jong',
         number: 17,
@@ -287,7 +279,7 @@ export const forwards = [
         value: 4,
     },
     {
-        id: 7,
+        id: 24,
         imgUrl: Torres,
         imgAlt: 'Ferran Torres',
         number: 19,
@@ -298,7 +290,7 @@ export const forwards = [
         value: 45,
     },
     {
-        id: 8,
+        id: 25,
         imgUrl: Aubameyang,
         imgAlt: 'Emerick Aubameyang',
         number: 25,

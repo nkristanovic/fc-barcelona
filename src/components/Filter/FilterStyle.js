@@ -1,12 +1,22 @@
 import styled from 'styled-components';
 import { colors, breakpoints } from '../../lib/style/theme';
 import { MdFilterList } from 'react-icons/md';
+
 export const Wrapper = styled.div`
-    display: block;
+    display: none;
+    @media  screen and (${breakpoints.desktop}) {
+      display: block;
+    }
 `;
 
-export const Dodaj = styled.div`
+export const MobileWrapper = styled.div`
+    display: block;
+    @media  screen and (${breakpoints.desktop}) {
+      display: none;
+    }
 `;
+
+export const Dodaj = styled.div``;
 
 export const FilterWrapper = styled.div`
   display: flex;
@@ -37,7 +47,11 @@ export const TitleWrapper = styled.div`
     height: 80px;
     position: relative;
     margin-bottom: 40px;
-    @media  screen and (${breakpoints.desktop}) {
+    @media  screen and (${breakpoints.desktopLarge}) {
+      width: 300px;
+      height: 70px;
+    }
+    @media  screen and (${breakpoints.desktopExtraLarge}) {
       width: 375px;
       height: 80px;
     }
@@ -73,13 +87,22 @@ export const FilterOption = styled.div`
 `;
 
 export const Categories = styled.div`
-  display: block;
+  display: grid;
+  grid-template-columns: auto auto;
 `;
 
-export const Category = styled.div``;
+export const CategoriesTransfer = styled.div`
+  display: block;
+  margin-top: 30px;
+`;
+export const Category = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+`;
 
 export const InputCheckbox = styled.input`
-  display: none;
+  
 `;
 
 export const InputRange = styled.input`
@@ -116,33 +139,13 @@ export const LabelFilter = styled.label`
 
 export const CheckboxOptionLabel = styled.label`
   font-size: 16px;
-  line-height: 1.7;
+  line-height: 1.5;
   margin-bottom: 16px;
-  padding-left: 35px;
+  padding-left: 20px;
   position: relative;
   display: block;
   cursor: pointer;
   color: ${colors.white};
-  &::before {
-    content: '';
-    height: 10px;
-    width: 10px;
-    position: absolute;
-    top: 6px;
-    left: 10px;
-    border: 2px solid ${colors.white};
-    background-color: ${colors.mirage};
-  }
-  [type='checkbox']:checked + &::after {
-    content: '';
-    height: 10px;
-    width: 10px;
-    position: absolute;
-    top: 6px;
-    left: 10px;
-    border: 2px solid #ffffff;
-    background-color: ${colors.goldenYellow};
-  }
 `;
 
 export const HorizontalLine = styled.div` 
