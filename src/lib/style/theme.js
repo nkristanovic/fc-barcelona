@@ -15,7 +15,7 @@ export const colors = {
     mediumDarkPink: '#A50044',
     paprika: '#99003F',
     blackOverlay: 'rgba(0, 0, 0, 0.7)',
-    mercury: '#E5E5E5'
+    mercury: '#E5E5E5',
 }
 
 export const boxShadow = '0px 4px 4px rgba(0, 0, 0, 0.25)';

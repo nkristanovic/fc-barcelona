@@ -21,6 +21,7 @@ export const Inner = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
     @media screen and (${breakpoints.mobileLarge}) {
         padding: 15px 20px;
     }

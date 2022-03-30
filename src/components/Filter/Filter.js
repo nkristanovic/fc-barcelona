@@ -2,7 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 import Slider from '@material-ui/core/Slider';
 import { makeStyles } from '@material-ui/core/styles';
-import './slider.css';
+import SearchBar from '../SearchBar/SearchBar';
+import {
+    position,
+    nationality
+} from '../../lib/mock/FilterData';
 import {
     Wrapper,
     MobileWrapper,
@@ -17,17 +21,12 @@ import {
     TitleWrapper,
     HorizontalLine,
     LabelWrapper,
-    Dodaj,
+    Container,
     FilterList,
     FilterWrapper,
     FilterText,
     CategoriesTransfer
 } from './FilterStyle';
-import SearchBar from '../SearchBar/SearchBar';
-import {
-    position,
-    nationality
-} from '../../lib/mock/FilterData';
 
 const useStyles = makeStyles({
     root: {
@@ -45,12 +44,12 @@ const useStyles = makeStyles({
 });
 
 const Filter = (props) => {
+
     const [showDescription, setShowDescrption] = useState(false);
     const [showDescription1, setShowDescrption1] = useState(false);
     const [showDescription2, setShowDescrption2] = useState(false);
     const [showDescription3, setShowDescrption3] = useState(false);
     const classes = useStyles();
-
 
     return (
         <>
@@ -68,7 +67,7 @@ const Filter = (props) => {
                 </FilterOption>
                 <HorizontalLine />
                 {showDescription &&
-                    <Dodaj>
+                    <Container>
                         <FilterOption>
                             <LabelWrapper>
                                 <Label>Position</Label>
@@ -182,7 +181,7 @@ const Filter = (props) => {
                         {showDescription3 ?
                             null : <HorizontalLine />
                         }
-                    </Dodaj>
+                    </Container>
                 }
             </MobileWrapper>
             <Wrapper>
@@ -194,7 +193,7 @@ const Filter = (props) => {
                     <SearchBar handle={props.handleChange} clear={props.handleClear} />
                 </FilterOption>
                 <HorizontalLine />
-                <Dodaj>
+                <Container>
                     <FilterOption>
                         <LabelWrapper>
                             <Label>Position</Label>
@@ -309,7 +308,7 @@ const Filter = (props) => {
                     {showDescription3 ?
                         null : <HorizontalLine />
                     }
-                </Dodaj>
+                </Container>
             </Wrapper>
         </>
     );

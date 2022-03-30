@@ -16,31 +16,6 @@ export const MobileWrapper = styled.div`
     }
 `;
 
-export const Dodaj = styled.div``;
-
-export const FilterWrapper = styled.div`
-  display: flex;
-  margin-bottom: 10px;
-  @media  screen and (${breakpoints.desktop}) {
-      display: none;
-    }
-`;
-export const FilterList = styled(MdFilterList)`
-  width: 20px;
-  height: 20px;
-  color: ${colors.white};
-  margin-right: 10px;
-`;
-
-export const FilterText = styled.p`
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 23px;
-  color: ${colors.white};
-`;
-
 export const TitleWrapper = styled.div`
     background: linear-gradient(89.93deg, #A50044 0.05%, #003568 99.94%);
     width: 100%;
@@ -101,17 +76,7 @@ export const Category = styled.div`
   align-items: baseline;
 `;
 
-export const InputCheckbox = styled.input`
-  
-`;
-
-export const InputRange = styled.input`
-    margin-right: 10px;
-    width: 150px;
-    @media  screen and (${breakpoints.desktop}) {
-      width: 200px;
-    }
-`;
+export const InputCheckbox = styled.input` `;
 
 export const Label = styled.label`
     font-family: 'Roboto', sans-serif;
@@ -153,4 +118,29 @@ export const HorizontalLine = styled.div`
     height: 1px;
     width: 100%;
     margin-bottom: 19px;
+`;
+
+export const Container = styled.div``;
+
+export const FilterList = styled(MdFilterList)`
+  width: 20px;
+  height: 20px;
+  color: ${colors.white};
+  margin-right: 10px;
+`;
+export const FilterWrapper = styled.div`
+  display: flex;
+  margin-bottom: 10px;
+  @media  screen and (${breakpoints.desktop}) {
+      display: none;
+    }
+`;
+
+export const FilterText = styled.p`
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: ${colors.white};
 `;

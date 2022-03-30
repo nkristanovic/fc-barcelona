@@ -31,7 +31,7 @@ export const SearchIcon = styled.figure`
 
 export const Input = styled.input`
     height: 30px;
-    width: 250px;
+    width: 100%;
     border-radius: 4px;
     font-family: 'Roboto';
     border: solid 2px ${colors.goldenYellow};
@@ -48,10 +48,11 @@ export const Input = styled.input`
     }
     @media  screen and (${breakpoints.tablet}) {
       height: 30px;
-      width: 300px;
+      width: 50%;
     }
     @media  screen and (${breakpoints.desktop}) {
       height: 40px;
+      width: 100%;
       font-size: 18px;
       padding: 0 40px;
       line-height: 23px;

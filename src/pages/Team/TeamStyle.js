@@ -11,9 +11,6 @@ export const Position = styled.p`
     font-size: 20px;
     line-height: 23px;
     margin: 31px 0;
-  @media  screen and (${breakpoints.tablet}) {
-
-  }
 `;
 export const Empty = styled.p`
     color: ${colors.white};
@@ -23,9 +20,6 @@ export const Empty = styled.p`
     line-height: 23px;
     margin: 31px 0;
     visibility: hidden;
-  @media  screen and (${breakpoints.tablet}) {
-
-  }
 `;
 export const Left = styled.div`
   @media  screen and (${breakpoints.desktop}) {

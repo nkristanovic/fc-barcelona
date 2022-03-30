@@ -18,12 +18,20 @@ import {
     Value,
     Wrapper
 } from './CardsStyle';
-import { Grid } from '../../lib/style/generalStyles';
 
-const Cards = ({ img, alt, numberInfo, name, position, age, nationality, value }) => {
+const Cards = (
+    {
+        img,
+        alt,
+        numberInfo,
+        name,
+        position,
+        age,
+        nationality,
+        value
+    }) => {
     return (
         <>
-
             <CardWrapper>
                 <Overlay>
                     <Wrapper>

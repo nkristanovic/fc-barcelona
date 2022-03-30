@@ -20,6 +20,7 @@ export const SectionContent = styled.div`
     }
   `} 
 `;
+
 export const ButtonDefault = css`
   background-color: ${colors.paprika};
   box-shadow: ${boxShadow};

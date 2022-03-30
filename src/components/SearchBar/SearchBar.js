@@ -1,8 +1,12 @@
 import React from 'react';
-import { BarWrapper, SearchIcon, Input, Search } from './SearchBarStyle';
+import {
+    BarWrapper,
+    SearchIcon,
+    Input,
+    Search
+} from './SearchBarStyle';
 
 const SearchBar = (props) => {
-
     return (
         <>
             <BarWrapper className="Wrapper">
@@ -10,7 +14,6 @@ const SearchBar = (props) => {
                     type="text"
                     placeholder="Search players"
                     onChange={props.handle}
-
                 />
                 <SearchIcon>
                     <Search />

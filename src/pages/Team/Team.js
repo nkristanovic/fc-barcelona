@@ -14,6 +14,11 @@ const Team = () => {
     const [genre1, setGenre1] = useState([]);
     const [value, setValue] = useState('');
     const [selectedPrice, setSelectedPrice] = useState([0, 100]);
+    const minPrice = selectedPrice[0];
+    const maxPrice = selectedPrice[1];
+    const handleSearch = (e) => {
+        setValue(e.target.value)
+    };
     const handleChange = e => {
         if (e.target.checked) {
             setGenre([...genre, e.target.value]);
@@ -34,16 +39,9 @@ const Team = () => {
         }
     };
 
-    const handleSearch = (e) => {
-        setValue(e.target.value)
-    };
-
     const handleChangePrice = (event, value) => {
         setSelectedPrice(value);
     };
-
-    const minPrice = selectedPrice[0];
-    const maxPrice = selectedPrice[1];
 
     return (
         <>
