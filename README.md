@@ -1,6 +1,6 @@
 Netlify:
 
-https://famous-puppy-f8ee8b.netlify.app/team
+https://famous-puppy-f8ee8b.netlify.app/
 
 # Getting Started with Create React App
 
