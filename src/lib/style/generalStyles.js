@@ -11,7 +11,6 @@ export const SectionContent = styled.div`
       justify-content: end;
       justify-items: end;
       grid-template-columns: auto auto;
-      padding: 15px;
       padding: 15px 30px;
     }
     @media screen and (${breakpoints.desktopLarge}) {
@@ -77,6 +76,7 @@ export const Grid = styled.div`
     }
     @media  screen and (${breakpoints.desktop}) {
       grid-template-columns: repeat(2, 1fr);
+      column-gap: 25px;
       max-width: 993px;
     }
     @media  screen and (${breakpoints.desktopLarge}) {

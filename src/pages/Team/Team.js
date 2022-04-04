@@ -16,9 +16,12 @@ const Team = () => {
     const [selectedPrice, setSelectedPrice] = useState([0, 100]);
     const minPrice = selectedPrice[0];
     const maxPrice = selectedPrice[1];
+    const [event, setEvent] = useState(players);
+    const [show, setShow] = useState(false);
     const handleSearch = (e) => {
         setValue(e.target.value)
     };
+
     const handleChange = e => {
         if (e.target.checked) {
             setGenre([...genre, e.target.value]);
@@ -43,6 +46,79 @@ const Team = () => {
         setSelectedPrice(value);
     };
 
+    const compareByName = (a, b) => {
+        const eventA = a.name.toUpperCase();
+        const eventB = b.name.toUpperCase();
+
+        if (eventA < eventB) {
+            return -1;
+        }
+        if (eventA > eventB) {
+            return 1;
+        }
+        return 0;
+    };
+
+    const compareByAge = (a, b) => {
+        if (a.age < b.age) {
+            return -1;
+        }
+        if (a.age > b.age) {
+            return 1;
+        }
+        return 0;
+    };
+
+    const compareByNumber = (a, b) => {
+        if (a.number > b.number) {
+            return 1;
+        }
+        if (a.number < b.number) {
+            return -1;
+        }
+        return 0;
+    };
+
+    const compareByValue = (a, b) => {
+        if (a.value > b.value) {
+            return -1;
+        }
+        if (a.value < b.value) {
+            return 1;
+        }
+        return 0;
+    };
+
+    const sort = (sortMethod) => {
+        let dataToSort;
+
+        switch (sortMethod) {
+            case 'byDefault':
+                dataToSort = [...players];
+                break;
+            case 'byAge':
+                dataToSort = [...event].sort(compareByAge);
+                break;
+            case 'byName':
+                dataToSort = [...event].sort(compareByName);
+                break;
+            case 'byNumber':
+                dataToSort = [...event].sort(compareByNumber);
+                break;
+            case 'byValue':
+                dataToSort = [...event].sort(compareByValue);
+                break;
+            default:
+                break;
+        }
+        setShow(false);
+        setEvent(dataToSort);
+        // console.log(dataToSort);
+    };
+
+    const handleClose = () => {
+        setShow(false)
+    }
     return (
         <>
             <SectionContent columns={2}>
@@ -53,12 +129,20 @@ const Team = () => {
                         handleCategoriesChange={handleChange1}
                         changePrice={handleChangePrice}
                         value={selectedPrice}
+                        sortMethod1={() => sort('byDefault')}
+                        sortMethod2={() => sort('byName')}
+                        sortMethod3={() => sort('byAge')}
+                        sortMethod4={() => sort('byNumber')}
+                        sortMethod5={() => sort('byValue')}
+                        show={show}
+                        open={() => setShow(true)}
+                        close={handleClose}
                     />
                 </Left>
                 <Right>
                     <Grid>
                         {
-                            players
+                            event
                                 .filter(events => {
                                     return events.name.toLowerCase().includes(value.toLowerCase());
                                 })
@@ -79,8 +163,10 @@ const Team = () => {
                                         return genre1.some(category => [nationality.nationality].flat().includes(category))
                                     }
                                 })
+
                                 .map(info => (
                                     <Cards
+
                                         key={info.id}
                                         img={info.imgUrl}
                                         alt={info.imgAlt}
@@ -102,3 +188,4 @@ const Team = () => {
 };
 
 export default Team;
+

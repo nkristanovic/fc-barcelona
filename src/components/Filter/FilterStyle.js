@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { colors, breakpoints } from '../../lib/style/theme';
 import { MdFilterList } from 'react-icons/md';
+import { BiChevronDown, BiChevronUp } from 'react-icons/bi';
 
 export const Wrapper = styled.div`
     display: none;
@@ -14,6 +15,58 @@ export const MobileWrapper = styled.div`
     @media  screen and (${breakpoints.desktop}) {
       display: none;
     }
+`;
+
+export const SortIcon = styled.div`
+  display: flex;
+  align-items: stretch;
+  cursor: pointer;
+`;
+
+export const DownIcon = styled(BiChevronDown)`
+  color: ${colors.white};
+  width: 25px;
+  height: 25px;
+`;
+
+export const UpIcon = styled(BiChevronUp)`
+  color: ${colors.white};
+  width: 25px;
+  height: 25px;
+`;
+
+export const SortModalBackground = styled.div`
+  width: 100%;
+  height: 100%;
+  background-color: ${colors.black};
+  opacity: 0.3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  @media screen and (${breakpoints.tablet}) {
+    display: none;
+  }
+`;
+export const SortWrapper = styled.div`
+    display: flex;
+    justify-content: space-between;
+`;
+
+export const SortFilter = styled.div`
+    display: flex;
+    justify-content: space-between;
+`;
+
+export const Sort = styled.p`
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 16px;
+    display: inline-block;
+    color: ${colors.white};
+    cursor: pointer;
 `;
 
 export const TitleWrapper = styled.div`
@@ -51,7 +104,7 @@ export const Title = styled.h1`
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    @media  screen and (${breakpoints.tablet}) {
+    @media  screen and (${breakpoints.desktopLarge}) {
       font-size: 30px;
       line-height: 35px;
     }
@@ -128,6 +181,7 @@ export const FilterList = styled(MdFilterList)`
   color: ${colors.white};
   margin-right: 10px;
 `;
+
 export const FilterWrapper = styled.div`
   display: flex;
   margin-bottom: 10px;

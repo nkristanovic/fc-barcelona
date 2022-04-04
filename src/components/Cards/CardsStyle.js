@@ -9,8 +9,8 @@ export const Card = styled.div`
     }
     
     @media screen and (${breakpoints.desktop}) {
-        width: 288px;
-        height: 288px;
+        width: 278px;
+        height: 278px;
         padding: 8px 0 0 0;
         margin-bottom: 34px;
     }
@@ -21,6 +21,10 @@ export const Image = styled.img`
     height: 250px;
     object-fit: cover;
     @media screen and (${breakpoints.desktop}) {
+        width: 258px;
+        height: 278px;
+    }
+    @media screen and (${breakpoints.desktopLarge}) {
         width: 278px;
         height: 278px;
     }
@@ -191,4 +195,3 @@ export const Value = styled.p`
         line-height: 21px;
     }
 `;
-

@@ -21,6 +21,7 @@ export const Empty = styled.p`
     margin: 31px 0;
     visibility: hidden;
 `;
+
 export const Left = styled.div`
   @media  screen and (${breakpoints.desktop}) {
     position: sticky;
@@ -31,9 +32,10 @@ export const Left = styled.div`
 
 export const Right = styled.div`
     @media  screen and (${breakpoints.desktop}) {
-      padding-left: 40px;
+      padding-left: 20px;
     }
     @media  screen and (${breakpoints.desktopLarge}) {
       padding-left: 48px;
     }
 `;
+

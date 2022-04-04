@@ -25,8 +25,15 @@ import {
     FilterList,
     FilterWrapper,
     FilterText,
-    CategoriesTransfer
+    CategoriesTransfer,
+    Sort,
+    SortWrapper,
+    SortFilter,
+    SortIcon,
+    DownIcon,
+    UpIcon
 } from './FilterStyle';
+import SortModal from '../SortModal/SortModal';
 
 const useStyles = makeStyles({
     root: {
@@ -53,17 +60,36 @@ const Filter = (props) => {
 
     return (
         <>
+            <SortModal
+                sort1={props.sortMethod1}
+                sort2={props.sortMethod2}
+                sort3={props.sortMethod3}
+                sort4={props.sortMethod4}
+                sort5={props.sortMethod5}
+                show={props.show}
+            />
             <MobileWrapper>
                 <TitleWrapper>
                     <Title>First Team</Title>
                 </TitleWrapper>
                 <FilterOption>
-                    <LabelFilter>Filters</LabelFilter>
                     <SearchBar handle={props.handleChange} clear={props.handleClear} />
-                    <FilterWrapper>
-                        <FilterList onClick={() => setShowDescrption(!showDescription)} />
-                        <FilterText>Filters</FilterText>
-                    </FilterWrapper>
+                    <SortFilter>
+                        <FilterWrapper onClick={() => setShowDescrption(!showDescription)}>
+                            <FilterList />
+                            <FilterText>Filters</FilterText>
+                        </FilterWrapper>
+                        {props.show ?
+                            <SortIcon close={props.close}>
+                                <UpIcon />
+                                <Sort>Sort</Sort>
+                            </SortIcon>
+                            : <SortIcon onClick={props.open}>
+                                <DownIcon />
+                                <Sort>Sort</Sort>
+                            </SortIcon>
+                        }
+                    </SortFilter>
                 </FilterOption>
                 <HorizontalLine />
                 {showDescription &&
@@ -189,7 +215,19 @@ const Filter = (props) => {
                     <Title>First Team</Title>
                 </TitleWrapper>
                 <FilterOption>
-                    <LabelFilter>Filters</LabelFilter>
+                    <SortWrapper>
+                        <LabelFilter>Filters</LabelFilter>
+                        {props.show ?
+                            <SortIcon close={props.close}>
+                                <UpIcon />
+                                <Sort>Sort</Sort>
+                            </SortIcon>
+                            : <SortIcon onClick={props.open}>
+                                <DownIcon />
+                                <Sort>Sort</Sort>
+                            </SortIcon>
+                        }
+                    </SortWrapper>
                     <SearchBar handle={props.handleChange} clear={props.handleClear} />
                 </FilterOption>
                 <HorizontalLine />
