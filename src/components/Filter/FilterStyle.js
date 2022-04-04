@@ -61,9 +61,10 @@ export const SortFilter = styled.div`
 export const Sort = styled.p`
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 23px;
     margin-bottom: 16px;
+    font-style: normal;
     display: inline-block;
     color: ${colors.white};
     cursor: pointer;
