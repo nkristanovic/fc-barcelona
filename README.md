@@ -1,6 +1,6 @@
 Netlify:
 
-https://soft-raindrop-b69a35.netlify.app
+https://famous-puppy-f8ee8b.netlify.app/team
 
 # Getting Started with Create React App
 
